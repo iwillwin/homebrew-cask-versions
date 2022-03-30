@@ -14,7 +14,7 @@ cask 'navicat-premium15' do
     homepage 'https://www.navicat.com/products/navicat-premium'
   end
 
-  name 'Navicat Premium15'
+  name 'Navicat Premium'
 
   app 'Navicat Premium.app'
 end
