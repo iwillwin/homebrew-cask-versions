@@ -1,4 +1,4 @@
-cask "surge3" do
+cask "surge" do
   version "3.5.8-1130"
   sha256 "4b1c620834eb8f664c7624fbb48bd401aa8dbcfa6bf963bc4951972226817367"
 
