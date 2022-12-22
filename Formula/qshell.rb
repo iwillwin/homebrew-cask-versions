@@ -4,9 +4,6 @@ class Qshell < Formula
   url "https://github.com/qiniu/qshell/releases/download/v2.9.1/qshell-v2.9.1-darwin-amd64.tar.gz"
   sha256 "6237aed31729d23f6bb165f439fb096dad7f14aea13af32ebc1484055ae3ea14"
   license "MIT"
-  version "2.9.1"
-
-  bottle :unneeded
 
   def install
     bin.install "qshell" => "qshell"
