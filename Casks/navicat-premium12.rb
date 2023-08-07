@@ -7,5 +7,10 @@ cask 'navicat-premium12' do
   name 'Navicat Premium'
   homepage 'https://www.navicat.com/products/navicat-premium'
 
+  livecheck do
+    url "https://www.navicat.com/en/products/navicat-premium-release-note#M"
+    regex(/Navicat\sPremium\s\(macOS\)\sversion\s(\d+(?:\.\d+)+)/i)
+  end
+
   app 'Navicat Premium.app'
 end
