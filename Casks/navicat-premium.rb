@@ -1,5 +1,6 @@
 cask 'navicat-premium' do
-  version '16.3.5'
+  version :latest
+  # version '16.3.5'
   sha256 :no_check
 
   url "file://#{ENV["HOME"]}/Documents/Other/Navicat%20Premium/navicat#{version.major_minor.no_dots}_premium_en.dmg"
