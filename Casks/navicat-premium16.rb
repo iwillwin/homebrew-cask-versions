@@ -1,4 +1,4 @@
-cask 'navicat-premium' do
+cask 'navicat-premium16' do
   version '16.3.5'
   sha256 :no_check
 
