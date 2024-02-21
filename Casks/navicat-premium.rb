@@ -1,4 +1,4 @@
-cask 'navicat-premium16' do
+cask 'navicat-premium' do
   version '16.3.5'
   sha256 :no_check
 
@@ -12,6 +12,7 @@ cask 'navicat-premium16' do
     regex(/Navicat\sPremium\s\(macOS\)\sversion\s(\d+(?:\.\d+)+)/i)
   end
 
+  auto_updates false
   depends_on macos: ">= :mojave"
 
   app "Navicat Premium.app"
