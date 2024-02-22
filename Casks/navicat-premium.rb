@@ -1,7 +1,6 @@
 cask 'navicat-premium' do
-  version :latest
-  # version '16.3.5'
-  sha256 :no_check
+  version '16.3.5'
+  sha256 '6c62585613f5cf6107536fa36252c40275a560d51a6362ae502d1ae520d001dc'
 
   url "file://#{ENV["HOME"]}/Documents/Other/Navicat%20Premium/navicat#{version.major_minor.no_dots}_premium_en.dmg"
   name "Navicat Premium"
@@ -13,7 +12,6 @@ cask 'navicat-premium' do
     regex(/Navicat\sPremium\s\(macOS\)\sversion\s(\d+(?:\.\d+)+)/i)
   end
 
-  auto_updates true
   depends_on macos: ">= :mojave"
 
   app "Navicat Premium.app"
