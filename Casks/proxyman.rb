@@ -3,7 +3,7 @@ cask "proxyman" do
     sha256 "b01c533f720e306a956908a8610bf63cb2c5ed4d43cd8bb04b84f0e8ee9f8746"
 
     # url "https://download.proxyman.io/#{version.csv.second}/Proxyman_#{version.csv.first}.dmg"
-    url "file://#{ENV["HOME"]}/Documents/Other/Proxyman/Proxyman_#{version.csv.first}.dmg"
+    url "file://#{ENV["HOME"]}/aDrive/app/Proxyman/Proxyman_#{version.csv.first}.dmg"
     name "Proxyman"
     desc "HTTP debugging proxy"
     homepage "https://proxyman.io/"
