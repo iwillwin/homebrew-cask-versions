@@ -1,8 +1,8 @@
 cask "paste" do
-    version "3.1.5"
-    sha256 "430113957dd64a505908a0c72d2152eaecd6b71f2affa2e6fb73fcc8cdd0323e"
+    version "4.1.3"
+    sha256 "f9a52fa35b8383161d6cd3d4849e1d830d496a08fde6de40e692036ba8437f65"
 
-    url "file://#{ENV["HOME"]}/aDrive/app/Paste/Paste_3.1.5.dmg"
+    url "file://#{ENV["HOME"]}/aDrive/app/Paste/Paste_4.1.3.dmg"
     name "Paste"
     desc "The clipboard as it should be. Paste is a new way to keep, search, and organize everything you copy on your Mac, iPhone, and iPad."
     homepage "https://pasteapp.io/"
