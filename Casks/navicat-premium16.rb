@@ -1,6 +1,6 @@
-cask 'navicat-premium' do
-  version '17.1.9'
-  sha256 '016d16fca941c28e0078ab237ce0f1d5ce8922e814ae0ffc93b9e46d5ae40afa'
+cask 'navicat-premium16' do
+  version '16.3.5'
+  sha256 '6c62585613f5cf6107536fa36252c40275a560d51a6362ae502d1ae520d001dc'
 
   url "file://#{ENV["HOME"]}/aDrive/app/Navicat%20Premium/navicat#{version.major_minor.no_dots}_premium_en.dmg"
   name "Navicat Premium"
