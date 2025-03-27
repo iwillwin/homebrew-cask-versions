@@ -1,6 +1,6 @@
 cask "bettermouse" do
     version "1.6,6830"
-    sha256 "5e09b9659a42a5efa8cd8168dbf53792f2945b637a8c48dabd5df10d49a94af0"
+    sha256 "5bf08b4332648abba0b43aab0d14e08d33defa758cf3a4a9d4f4c2dbd3c0b946"
 
     url "file:///Volumes/qing/aDrive/app/BetterMouse/BetterMouse.#{version.csv.first}.#{version.csv.second}.zip"
     name "BetterMouse"
