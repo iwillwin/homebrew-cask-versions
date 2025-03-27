@@ -2,7 +2,6 @@ cask "bettermouse" do
     version "1.6,6830"
     sha256 "5e09b9659a42a5efa8cd8168dbf53792f2945b637a8c48dabd5df10d49a94af0"
 
-    url "https://better-mouse.com/wp-content/uploads/BetterMouse."
     url "file:///Volumes/qing/aDrive/app/BetterMouse/BetterMouse.#{version.csv.first}.#{version.csv.second}.zip"
     name "BetterMouse"
     desc "Utility improving 3rd party mouse performance and functionalities"
