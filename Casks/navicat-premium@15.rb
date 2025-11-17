@@ -1,4 +1,4 @@
-cask 'navicat-premium15' do
+cask 'navicat-premium@15' do
   version '15.0.4'
 
   language 'zh', 'CN' do
