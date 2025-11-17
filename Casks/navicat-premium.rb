@@ -1,24 +1,26 @@
 cask 'navicat-premium' do
   version "17.3.5"
-  sha256 '016d16fca941c28e0078ab237ce0f1d5ce8922e814ae0ffc93b9e46d5ae40afa'
+  sha256 :no_check
 
+  # url "https://dn.navicat.com/download/navicat#{version.major}_premium_en.dmg"
   url "file:///Volumes/qing/aDrive/app/Navicat%20Premium/navicat#{version.major_minor}_premium_en.dmg"
   name "Navicat Premium"
   desc "Database administration and development tool"
   homepage "https://www.navicat.com/products/navicat-premium"
 
   livecheck do
-    url "https://www.navicat.com/en/products/navicat-premium-release-note#M"
-    regex(/Navicat\sPremium\s\(macOS\)\sversion\s(\d+(?:\.\d+)+)/i)
+    url "https://updater.navicat.com/mac/v#{version.major}/navicat_updates.php?appName=Navicat%20Premium"
+    strategy :sparkle, &:short_version
   end
 
-  depends_on macos: ">= :mojave"
+  conflicts_with cask: "navicat-premium@15"
+  depends_on macos: ">= :big_sur"
 
   app "Navicat Premium.app"
 
   zap trash: [
     "~/Library/Application Support/PremiumSoft CyberTech/Navicat CC/Navicat Premium",
-    "~/Library/Caches/com.apple.helpd/Generated/Navicat Help*#{version}",
+    "~/Library/Caches/com.apple.helpd/Generated/Navicat Help*",
     "~/Library/Preferences/com.navicat.NavicatPremium.plist",
     "~/Library/Saved Application State/com.navicat.NavicatPremium.savedState",
   ]
