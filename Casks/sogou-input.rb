@@ -3,7 +3,7 @@ cask "sogou-input" do
 
   # sha256
 
-  url "https://ime-sec.gtimg.com/202605020712/4ffd335260cb4f743be091ce7ad15bf2/pc/sogou_mac_new_guanwang_#{version}.zip",
+  url "https://ime-sec.gtimg.com/202605020712/4ffd335260cb4f743be091ce7ad15bf2/pc/sogou_mac_new_guanwang_#{version}.zip"
   name "Sogou Input Method"
   name "搜狗输入法"
   desc "Input method supporting full and double spelling"
