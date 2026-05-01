@@ -3,21 +3,11 @@ cask "sogou-input" do
 
   # sha256
 
-  url "https://rabbit-linker.vercel.app/gtimg/sogou_mac/#{version}",
-      verified: "rabbit-linker.vercel.app/"
+  url "https://ime-sec.gtimg.com/202605020712/4ffd335260cb4f743be091ce7ad15bf2/pc/sogou_mac_new_guanwang_#{version}.zip",
   name "Sogou Input Method"
   name "搜狗输入法"
   desc "Input method supporting full and double spelling"
   homepage "https://pinyin.sogou.com/mac/"
-
-  livecheck do
-    url :homepage
-    # https://ime-sec.gtimg.com/{dt}/{foo}/pc/dl/gzindex/{ts}/sogou_mac_617a.zip
-    regex(%r{href="https://ime-sec.gtimg.com/[^"]+/sogou_mac_(\d+(?:\.\d+)*[a-z]*)\.zip}i)
-    strategy :page_match do |page|
-      page.scan(regex).map { |match| match&.first }
-    end
-  end
 
   auto_updates true
 
@@ -45,4 +35,3 @@ cask "sogou-input" do
       ],
       rmdir: "~/Library/Application Support/Sogou"
 end
-# https://github.com/Homebrew/homebrew-cask/pull/155138
