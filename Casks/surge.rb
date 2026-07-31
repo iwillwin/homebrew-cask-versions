@@ -3,7 +3,7 @@ cask "surge" do
   sha256 "b88f8534354f3774e35b0280b5b6308c9f6c3ff5da5538efd42e647292063e21"
 
   # url "https://dl.nssurge.com/mac/v#{version.major}/Surge-#{version.tr(",", "-")}.zip"
-  url "file:///Volumes/qing/aDrive/app/Surge/Surge-#{version.tr(",", "-")}.zip"
+  url "file:///Volumes/qing/aDrive/app/Surge/Surge-6.6.0.zip"
   name "Surge"
   desc "Network toolbox"
   homepage "https://nssurge.com/"
